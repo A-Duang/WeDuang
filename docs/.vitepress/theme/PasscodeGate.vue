@@ -1,6 +1,6 @@
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue'
-import { useRoute } from 'vitepress'
+import { ref, computed, onMounted } from 'vue'
+import { useRoute, onBeforeRouteUpdate } from 'vitepress'
 import gateConfig from './gateConfig.js'
 
 const route = useRoute()
@@ -18,16 +18,14 @@ function decodePass() {
   }
 }
 
-const isGated = computed(() => {
-  const p = route.path
-  // 专栏入口页不拦
-  if (p === '/testing-basics/' || p === '/interviews/') return false
-  // 硬编码需要验证的路径
-  const gatedPrefixes = ['/testing-basics/', '/interviews/']
-  return gatedPrefixes.some(pre => p.startsWith(pre) && !p.endsWith('/'))
-})
+function isPathGated(path) {
+  if (gateConfig.indexPages.includes(path)) return false
+  return gateConfig.gatedPrefixes.some(pre => path.startsWith(pre) && !path.endsWith('/'))
+}
 
-function check() {
+const isGated = computed(() => isPathGated(route.path))
+
+function syncUnlock() {
   if (typeof window === 'undefined') return
   const saved = localStorage.getItem(STORAGE_KEY)
   unlocked.value = saved !== null && saved === decodePass()
@@ -49,8 +47,8 @@ function submit() {
   }
 }
 
-onMounted(check)
-watch(() => route.path, check)
+onMounted(syncUnlock)
+onBeforeRouteUpdate(syncUnlock)
 </script>
 
 <template>

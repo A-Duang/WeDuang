@@ -45,7 +45,15 @@ const inputCode = ref('')
 const error = ref('')
 const preview = ref('')
 const config = gateConfig
-const PASSCODE = 'duang2026' // 直接使用明文进行测试
+const STORAGE_KEY = 'weduang-passcode'
+
+function decodePass() {
+  try {
+    return atob(gateConfig.passcodeEncoded)
+  } catch {
+    return ''
+  }
+}
 
 const verifyPasscode = () => {
   error.value = ''
@@ -55,18 +63,17 @@ const verifyPasscode = () => {
     return
   }
 
-  // 验证口令
-  if (inputCode.value === PASSCODE) {
+  if (inputCode.value === decodePass()) {
     isUnlocked.value = true
-    localStorage.setItem('article_gate_unlocked', 'true')
+    localStorage.setItem(STORAGE_KEY, inputCode.value)
   } else {
     error.value = '口令错误，请检查后重试'
   }
 }
 
 onMounted(() => {
-  // 检查是否已经解锁
-  if (localStorage.getItem('article_gate_unlocked') === 'true') {
+  const saved = localStorage.getItem(STORAGE_KEY)
+  if (saved && saved === decodePass()) {
     isUnlocked.value = true
   }
 })

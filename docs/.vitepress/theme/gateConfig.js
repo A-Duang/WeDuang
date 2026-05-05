@@ -11,7 +11,13 @@ const gateConfig = {
 
   // 口令的 base64（当前明文：duang2026）
   // 修改口令：在浏览器控制台执行 btoa('新口令') 获取新值
-  passcodeEncoded: 'ZHVhbmcyMDI2'
+  passcodeEncoded: 'ZHVhbmcyMDI2',
+
+  // 需要口令验证的路径前缀（专栏入口页本身不拦截）
+  gatedPrefixes: ['/testing-basics/', '/interviews/', '/quality-assurance/'],
+
+  // 专栏入口页路径（不拦截）
+  indexPages: ['/testing-basics/', '/interviews/', '/quality-assurance/']
 }
 
 export default gateConfig
