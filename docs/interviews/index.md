@@ -66,6 +66,58 @@
   <span style="font-size: 1.25rem;">⚫</span> 得物
 </a>
 
+<a href="./bigo" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
+  <span style="font-size: 1.25rem;">🔵</span> BIGO
+</a>
+
+<a href="./shopee" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
+  <span style="font-size: 1.25rem;">🟠</span> Shopee
+</a>
+
+<a href="./zte" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
+  <span style="font-size: 1.25rem;">🔵</span> 中兴
+</a>
+
+<a href="./zuoyebang" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
+  <span style="font-size: 1.25rem;">🟢</span> 作业帮
+</a>
+
+<a href="./glodon" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
+  <span style="font-size: 1.25rem;">🔵</span> 广联达
+</a>
+
+<a href="./cmbw" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
+  <span style="font-size: 1.25rem;">🔴</span> 招银网络
+</a>
+
+<a href="./hikvision" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
+  <span style="font-size: 1.25rem;">🔵</span> 海康威视
+</a>
+
+<a href="./sangfor" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
+  <span style="font-size: 1.25rem;">🟢</span> 深信服
+</a>
+
+<a href="./guazi" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
+  <span style="font-size: 1.25rem;">🟠</span> 瓜子二手车
+</a>
+
+<a href="./beike" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
+  <span style="font-size: 1.25rem;">🟢</span> 贝壳
+</a>
+
+<a href="./tujia" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
+  <span style="font-size: 1.25rem;">🔵</span> 途家
+</a>
+
+<a href="./kingsoft" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
+  <span style="font-size: 1.25rem;">🟢</span> 金山
+</a>
+
+<a href="./sf" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
+  <span style="font-size: 1.25rem;">🔴</span> 顺丰
+</a>
+
 <a href="./others" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1rem; border: 1px solid var(--vp-c-border); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; font-weight: 500;">
   <span style="font-size: 1.25rem;">📌</span> 其他公司
 </a>

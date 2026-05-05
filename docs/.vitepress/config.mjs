@@ -95,6 +95,19 @@ export default defineConfig({
             { text: '网易', link: '/interviews/netease' },
             { text: '滴滴', link: '/interviews/didi' },
             { text: '得物', link: '/interviews/dewu' },
+            { text: 'BIGO', link: '/interviews/bigo' },
+            { text: 'Shopee', link: '/interviews/shopee' },
+            { text: '中兴', link: '/interviews/zte' },
+            { text: '作业帮', link: '/interviews/zuoyebang' },
+            { text: '广联达', link: '/interviews/glodon' },
+            { text: '招银网络', link: '/interviews/cmbw' },
+            { text: '海康威视', link: '/interviews/hikvision' },
+            { text: '深信服', link: '/interviews/sangfor' },
+            { text: '瓜子二手车', link: '/interviews/guazi' },
+            { text: '贝壳', link: '/interviews/beike' },
+            { text: '途家', link: '/interviews/tujia' },
+            { text: '金山', link: '/interviews/kingsoft' },
+            { text: '顺丰', link: '/interviews/sf' },
             { text: '其他公司', link: '/interviews/others' }
           ]
         }
