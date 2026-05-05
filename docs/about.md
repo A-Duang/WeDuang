@@ -16,7 +16,7 @@
 
 - 微信：15639772085（备注「测开」）
 - Email：1257003181@qq.com
-- GitHub：<https://github.com/gaoxiang>
+- GitHub：<https://github.com/A-Duang>
 
 ## 支持本站
 
