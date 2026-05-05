@@ -1,6 +1,6 @@
 <script setup>
-import { ref, computed, onMounted } from 'vue'
-import { useRoute, onBeforeRouteUpdate } from 'vitepress'
+import { ref, computed, onMounted, watch } from 'vue'
+import { useRoute } from 'vitepress'
 import gateConfig from './gateConfig.js'
 
 const route = useRoute()
@@ -48,7 +48,7 @@ function submit() {
 }
 
 onMounted(syncUnlock)
-onBeforeRouteUpdate(syncUnlock)
+watch(() => route.path, syncUnlock)
 </script>
 
 <template>
