@@ -115,7 +115,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/A-Duang' }
+      { icon: 'github', link: 'https://github.com/A-Duang/WeDuang' }
     ],
 
     footer: {
