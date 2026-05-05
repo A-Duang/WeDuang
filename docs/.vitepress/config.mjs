@@ -8,6 +8,24 @@ export default defineConfig({
   cleanUrls: false,
   base: '/',
 
+  // SEO: 自动生成 sitemap.xml
+  sitemap: {
+    hostname: 'https://weduang.pages.dev'
+  },
+
+  // SEO: meta 标签
+  head: [
+    ['meta', { name: 'keywords', content: '测试开发,测开,面经,质量保障,测试计划,Java,计算机基础,大厂面试' }],
+    ['meta', { name: 'author', content: '阿Duang' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: '阿Duang的知识库' }],
+    ['meta', { property: 'og:description', content: '测试开发学习、面经与实战沉淀，从计算机基础到大厂面经，系统沉淀测开岗的硬核干货' }],
+    ['meta', { property: 'og:url', content: 'https://weduang.pages.dev' }],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
+    ['link', { rel: 'icon', href: '/logo.svg' }],
+    ['link', { rel: 'canonical', href: 'https://weduang.pages.dev' }]
+  ],
+
   themeConfig: {
     logo: '/logo.svg',
 

@@ -1,1 +1,5 @@
-/static/
+User-agent: *
+Allow: /
+Disallow: /_worker.js
+
+Sitemap: https://weduang.pages.dev/sitemap.xml
