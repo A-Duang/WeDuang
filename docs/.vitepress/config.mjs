@@ -15,6 +15,7 @@ export default defineConfig({
 
   // SEO: meta 标签
   head: [
+    ['meta', { name: 'google-site-verification', content: '48NRAJ949sQGl8fzpjYVchm2i7MH6u24zo7StK-M2uw' }],
     ['meta', { name: 'keywords', content: '测试开发,测开,面经,质量保障,测试计划,Java,计算机基础,大厂面试' }],
     ['meta', { name: 'author', content: '阿Duang' }],
     ['meta', { property: 'og:type', content: 'website' }],
