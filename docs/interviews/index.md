@@ -6,7 +6,7 @@
 
 ### 大厂面经
 
-<div class="kb-cards" style="grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));">
+<div class="kb-cards kb-cards--dense">
 
 <a href="./alibaba" class="kb-card"><span class="kb-card-icon">🟠</span><div class="kb-card-body"><div class="kb-card-title">阿里</div></div></a>
 <a href="./ant" class="kb-card"><span class="kb-card-icon">🔵</span><div class="kb-card-body"><div class="kb-card-title">蚂蚁集团</div></div></a>

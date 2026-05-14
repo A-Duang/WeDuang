@@ -296,6 +296,30 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
 }
 
+/* 密集卡片布局（面经公司列表等） */
+.kb-cards--dense {
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: var(--kb-space-sm);
+}
+
+.kb-cards--dense .kb-card {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--kb-space-sm) var(--kb-space-xs);
+  gap: 0.3rem;
+}
+
+.kb-cards--dense .kb-card-title {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.kb-cards--dense .kb-card-icon {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
 .kb-tag {
   display: inline-flex;
   align-items: center;
