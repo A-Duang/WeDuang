@@ -8,33 +8,33 @@
 
 <div class="kb-cards kb-cards--dense">
 
-<a href="./alibaba" class="kb-card"><span class="kb-card-icon">🟠</span><div class="kb-card-body"><div class="kb-card-title">阿里</div></div></a>
-<a href="./ant" class="kb-card"><span class="kb-card-icon">🔵</span><div class="kb-card-body"><div class="kb-card-title">蚂蚁集团</div></div></a>
-<a href="./tencent" class="kb-card"><span class="kb-card-icon">🟢</span><div class="kb-card-body"><div class="kb-card-title">腾讯</div></div></a>
-<a href="./bytedance" class="kb-card"><span class="kb-card-icon">⚫</span><div class="kb-card-body"><div class="kb-card-title">字节跳动</div></div></a>
-<a href="./baidu" class="kb-card"><span class="kb-card-icon">🔵</span><div class="kb-card-body"><div class="kb-card-title">百度</div></div></a>
-<a href="./huawei" class="kb-card"><span class="kb-card-icon">🔴</span><div class="kb-card-body"><div class="kb-card-title">华为</div></div></a>
-<a href="./jd" class="kb-card"><span class="kb-card-icon">🔴</span><div class="kb-card-body"><div class="kb-card-title">京东</div></div></a>
-<a href="./meituan" class="kb-card"><span class="kb-card-icon">🟡</span><div class="kb-card-body"><div class="kb-card-title">美团</div></div></a>
-<a href="./xiaomi" class="kb-card"><span class="kb-card-icon">🟠</span><div class="kb-card-body"><div class="kb-card-title">小米</div></div></a>
-<a href="./kuaishou" class="kb-card"><span class="kb-card-icon">🟠</span><div class="kb-card-body"><div class="kb-card-title">快手</div></div></a>
-<a href="./pdd" class="kb-card"><span class="kb-card-icon">🔴</span><div class="kb-card-body"><div class="kb-card-title">拼多多</div></div></a>
-<a href="./netease" class="kb-card"><span class="kb-card-icon">🔴</span><div class="kb-card-body"><div class="kb-card-title">网易</div></div></a>
-<a href="./didi" class="kb-card"><span class="kb-card-icon">🟠</span><div class="kb-card-body"><div class="kb-card-title">滴滴</div></div></a>
-<a href="./dewu" class="kb-card"><span class="kb-card-icon">⚫</span><div class="kb-card-body"><div class="kb-card-title">得物</div></div></a>
-<a href="./bigo" class="kb-card"><span class="kb-card-icon">🔵</span><div class="kb-card-body"><div class="kb-card-title">BIGO</div></div></a>
-<a href="./shopee" class="kb-card"><span class="kb-card-icon">🟠</span><div class="kb-card-body"><div class="kb-card-title">Shopee</div></div></a>
-<a href="./zte" class="kb-card"><span class="kb-card-icon">🔵</span><div class="kb-card-body"><div class="kb-card-title">中兴</div></div></a>
-<a href="./zuoyebang" class="kb-card"><span class="kb-card-icon">🟢</span><div class="kb-card-body"><div class="kb-card-title">作业帮</div></div></a>
-<a href="./glodon" class="kb-card"><span class="kb-card-icon">🔵</span><div class="kb-card-body"><div class="kb-card-title">广联达</div></div></a>
-<a href="./cmbw" class="kb-card"><span class="kb-card-icon">🔴</span><div class="kb-card-body"><div class="kb-card-title">招银网络</div></div></a>
-<a href="./hikvision" class="kb-card"><span class="kb-card-icon">🔵</span><div class="kb-card-body"><div class="kb-card-title">海康威视</div></div></a>
-<a href="./sangfor" class="kb-card"><span class="kb-card-icon">🟢</span><div class="kb-card-body"><div class="kb-card-title">深信服</div></div></a>
-<a href="./guazi" class="kb-card"><span class="kb-card-icon">🟠</span><div class="kb-card-body"><div class="kb-card-title">瓜子二手车</div></div></a>
-<a href="./beike" class="kb-card"><span class="kb-card-icon">🟢</span><div class="kb-card-body"><div class="kb-card-title">贝壳</div></div></a>
-<a href="./tujia" class="kb-card"><span class="kb-card-icon">🔵</span><div class="kb-card-body"><div class="kb-card-title">途家</div></div></a>
-<a href="./kingsoft" class="kb-card"><span class="kb-card-icon">🟢</span><div class="kb-card-body"><div class="kb-card-title">金山</div></div></a>
-<a href="./sf" class="kb-card"><span class="kb-card-icon">🔴</span><div class="kb-card-body"><div class="kb-card-title">顺丰</div></div></a>
-<a href="./others" class="kb-card"><span class="kb-card-icon">📌</span><div class="kb-card-body"><div class="kb-card-title">其他公司</div></div></a>
+<a href="./alibaba" class="kb-card kb-card--icon">🟠<span>阿里</span></a>
+<a href="./ant" class="kb-card kb-card--icon">🔵<span>蚂蚁集团</span></a>
+<a href="./tencent" class="kb-card kb-card--icon">🟢<span>腾讯</span></a>
+<a href="./bytedance" class="kb-card kb-card--icon">⚫<span>字节跳动</span></a>
+<a href="./baidu" class="kb-card kb-card--icon">🔵<span>百度</span></a>
+<a href="./huawei" class="kb-card kb-card--icon">🔴<span>华为</span></a>
+<a href="./jd" class="kb-card kb-card--icon">🔴<span>京东</span></a>
+<a href="./meituan" class="kb-card kb-card--icon">🟡<span>美团</span></a>
+<a href="./xiaomi" class="kb-card kb-card--icon">🟠<span>小米</span></a>
+<a href="./kuaishou" class="kb-card kb-card--icon">🟠<span>快手</span></a>
+<a href="./pdd" class="kb-card kb-card--icon">🔴<span>拼多多</span></a>
+<a href="./netease" class="kb-card kb-card--icon">🔴<span>网易</span></a>
+<a href="./didi" class="kb-card kb-card--icon">🟠<span>滴滴</span></a>
+<a href="./dewu" class="kb-card kb-card--icon">⚫<span>得物</span></a>
+<a href="./bigo" class="kb-card kb-card--icon">🔵<span>BIGO</span></a>
+<a href="./shopee" class="kb-card kb-card--icon">🟠<span>Shopee</span></a>
+<a href="./zte" class="kb-card kb-card--icon">🔵<span>中兴</span></a>
+<a href="./zuoyebang" class="kb-card kb-card--icon">🟢<span>作业帮</span></a>
+<a href="./glodon" class="kb-card kb-card--icon">🔵<span>广联达</span></a>
+<a href="./cmbw" class="kb-card kb-card--icon">🔴<span>招银网络</span></a>
+<a href="./hikvision" class="kb-card kb-card--icon">🔵<span>海康威视</span></a>
+<a href="./sangfor" class="kb-card kb-card--icon">🟢<span>深信服</span></a>
+<a href="./guazi" class="kb-card kb-card--icon">🟠<span>瓜子二手车</span></a>
+<a href="./beike" class="kb-card kb-card--icon">🟢<span>贝壳</span></a>
+<a href="./tujia" class="kb-card kb-card--icon">🔵<span>途家</span></a>
+<a href="./kingsoft" class="kb-card kb-card--icon">🟢<span>金山</span></a>
+<a href="./sf" class="kb-card kb-card--icon">🔴<span>顺丰</span></a>
+<a href="./others" class="kb-card kb-card--icon">📌<span>其他公司</span></a>
 
 </div>

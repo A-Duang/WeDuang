@@ -302,22 +302,20 @@ h1, h2, h3, h4, h5, h6 {
   gap: var(--kb-space-sm);
 }
 
-.kb-cards--dense .kb-card {
+/* 仅含 span 的扁平卡片（避免 <div> 在 <p> 中被浏览器拆散） */
+.kb-card--icon {
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: var(--kb-space-sm) var(--kb-space-xs);
-  gap: 0.3rem;
-}
-
-.kb-cards--dense .kb-card-title {
-  font-size: 0.875rem;
-  margin-bottom: 0;
-}
-
-.kb-cards--dense .kb-card-icon {
-  margin-top: 0;
+  gap: 0.35rem;
   font-size: 1.5rem;
+}
+
+.kb-card--icon span {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
 }
 
 .kb-tag {
