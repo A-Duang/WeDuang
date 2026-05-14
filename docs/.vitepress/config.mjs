@@ -34,6 +34,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '测试开发基础', link: '/testing-basics/' },
       { text: '质量保障', link: '/quality-assurance/' },
+      { text: '测试实战', link: '/test-practice/' },
       { text: '面经收集', link: '/interviews/' },
       { text: '关于', link: '/about' }
     ],
@@ -66,6 +67,53 @@ export default defineConfig({
             { text: '持续集成体系下的质量保障', link: '/quality-assurance/ci-quality' },
             { text: '如何保障开发代码的质量', link: '/quality-assurance/code-quality' },
             { text: '代码覆盖率统计 Jacoco 技术', link: '/quality-assurance/jacoco' }
+          ]
+        }
+      ],
+      '/test-practice/': [
+        {
+          text: '专项测试',
+          items: [
+            { text: '专栏首页', link: '/test-practice/' },
+            { text: 'App 测试应该怎么测', link: '/test-practice/app-testing' },
+            { text: 'Web 功能测试到底应该怎么测', link: '/test-practice/web-functional-testing' },
+            { text: '接口测试应该怎么测才算完整', link: '/test-practice/api-testing' },
+            { text: '小程序测试应该重点测什么', link: '/test-practice/mini-program-testing' },
+            { text: '表单类功能怎么测试最全面', link: '/test-practice/form-testing' },
+            { text: '搜索筛选和分页功能怎么测试', link: '/test-practice/search-filter-pagination' },
+            { text: '文件上传和下载怎么测试', link: '/test-practice/file-upload-download' },
+            { text: '批量导入和导出怎么测试', link: '/test-practice/batch-import-export' },
+            { text: '定时任务和消息通知怎么测试', link: '/test-practice/scheduled-task-testing' },
+            { text: '第三方接口和外部依赖怎么测试', link: '/test-practice/third-party-api' }
+          ]
+        },
+        {
+          text: '功能测试',
+          items: [
+            { text: '功能测试用例怎么设计才完整', link: '/test-practice/functional-testcase-design' },
+            { text: '功能测试如何体现接口和数据库意识', link: '/test-practice/functional-api-database' },
+            { text: '功能测试面试怎么回答才不像背答案', link: '/test-practice/functional-interview-answer' },
+            { text: '功能测试项目经历怎么讲出亮点', link: '/test-practice/functional-project-highlight' }
+          ]
+        },
+        {
+          text: '测试管理',
+          items: [
+            { text: 'Bug 生命周期和缺陷管理怎么回答', link: '/test-practice/bug-lifecycle' },
+            { text: '业务测试怎么体现测试深度', link: '/test-practice/testing-depth' },
+            { text: '回归测试怎么做才不会漏测', link: '/test-practice/regression-testing' },
+            { text: '测试环境怎么管理才不会拖慢测试', link: '/test-practice/test-environment' },
+            { text: '测试计划怎么写才不会变成文档工人', link: '/test-practice/test-plan-practice' },
+            { text: '需求评审阶段测试人员到底要做什么', link: '/test-practice/requirement-review-practice' }
+          ]
+        },
+        {
+          text: '业务面试题',
+          items: [
+            { text: '测试基础面试题', link: '/test-practice/interview-testing-basics' },
+            { text: 'Web 测试面试题', link: '/test-practice/interview-web' },
+            { text: 'App 测试面试题', link: '/test-practice/interview-app' },
+            { text: 'Python 自动化测试面试题', link: '/test-practice/interview-python-auto' }
           ]
         }
       ],

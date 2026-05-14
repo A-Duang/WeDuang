@@ -14,10 +14,10 @@ const gateConfig = {
   passcodeEncoded: 'ZHVhbmcyMDI2',
 
   // 需要口令验证的路径前缀（专栏入口页本身不拦截）
-  gatedPrefixes: ['/testing-basics/', '/interviews/', '/quality-assurance/'],
+  gatedPrefixes: ['/testing-basics/', '/interviews/', '/quality-assurance/', '/test-practice/'],
 
   // 专栏入口页路径（不拦截）
-  indexPages: ['/testing-basics/', '/interviews/', '/quality-assurance/']
+  indexPages: ['/testing-basics/', '/interviews/', '/quality-assurance/', '/test-practice/']
 }
 
 export default gateConfig

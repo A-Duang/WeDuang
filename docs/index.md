@@ -24,9 +24,14 @@ features:
     details: 测试计划、测试报告、测试左移右移、需求评审、CI/CD、代码覆盖率 Jacoco，覆盖全流程质量管控。
     link: /quality-assurance/
     linkText: 进入专栏
+  - icon: 🔧
+    title: 测试实战
+    details: App测试、接口测试、Web测试、功能用例设计、回归测试、测试管理，24篇实战指南覆盖各类场景。
+    link: /test-practice/
+    linkText: 进入专栏
   - icon: 💼
     title: 面经收集
-    details: 阿里、腾讯、字节、百度、华为等一线大厂测开岗真实面经，按公司分册整理。
+    details: 阿里、腾讯、字节、百度、华为等 27 家大厂测开岗真实面经，按公司分册整理。
     link: /interviews/
     linkText: 进入专栏
 ---
