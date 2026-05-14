@@ -298,8 +298,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 密集卡片布局（面经公司列表等） */
 .kb-cards--dense {
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--kb-space-sm);
+}
+
+@media (max-width: 768px) {
+  .kb-cards--dense {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .kb-cards--dense {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* 仅含 span 的扁平卡片（避免 <div> 在 <p> 中被浏览器拆散） */
