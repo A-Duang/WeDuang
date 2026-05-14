@@ -300,20 +300,26 @@ h1, h2, h3, h4, h5, h6 {
 /* markdown-it 把 <a> 包进 <p>，grid 必须加在 <p> 上才能生效 */
 .kb-cards--dense > p {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: var(--kb-space-sm);
   margin: 0;
 }
 
+@media (max-width: 960px) {
+  .kb-cards--dense > p {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .kb-cards--dense > p {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .kb-cards--dense > p {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
