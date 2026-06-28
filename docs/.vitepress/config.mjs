@@ -51,7 +51,9 @@ export default defineConfig({
             { text: 'Linux 与 Shell', link: '/testing-basics/linux-shell' },
             { text: '手撕代码高频题', link: '/testing-basics/coding-problems' },
             { text: 'AI 与大模型', link: '/testing-basics/ai-llm' },
-            { text: '测开校招项目类型', link: '/testing-basics/campus-projects' }
+            { text: '测开校招项目类型', link: '/testing-basics/campus-projects' },
+            { text: 'Python 核心技术', link: '/testing-basics/python-core' },
+            { text: '缓存和消息队列', link: '/testing-basics/cache-mq' }
           ]
         }
       ],

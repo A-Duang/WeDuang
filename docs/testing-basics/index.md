@@ -60,4 +60,20 @@
   </div>
 </a>
 
+<a href="./python-core" class="kb-card">
+  <span class="kb-card-icon">🐍</span>
+  <div class="kb-card-body">
+    <div class="kb-card-title">Python 核心技术</div>
+    <div class="kb-card-desc">Python 基础、进阶、并发、测试框架</div>
+  </div>
+</a>
+
+<a href="./cache-mq" class="kb-card">
+  <span class="kb-card-icon">⚡</span>
+  <div class="kb-card-body">
+    <div class="kb-card-title">缓存和消息队列</div>
+    <div class="kb-card-desc">Redis、RabbitMQ、Kafka 核心原理</div>
+  </div>
+</a>
+
 </div>
