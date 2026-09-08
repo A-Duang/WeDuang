@@ -49,20 +49,25 @@ export async function onRequestPost(context) {
 
     // Step 3: 创建草稿
     const draftUrl = `https://api.weixin.qq.com/cgi-bin/draft/add?access_token=${accessToken}`;
+    
+    // 构建文章对象，只在有封面图时添加 thumb_media_id
+    const article = {
+      title,
+      content: body.content,
+      author: body.author || '',
+      digest: body.digest || '',
+      need_open_comment: 1,
+      only_fans_can_comment: 0,
+    };
+    
+    if (thumbMediaId) {
+      article.thumb_media_id = thumbMediaId;
+    }
+    
     const draftResp = await fetch(draftUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        articles: [{
-          title,
-          content: body.content,
-          thumb_media_id: thumbMediaId,
-          author: body.author || '',
-          digest: body.digest || '',
-          need_open_comment: 1,
-          only_fans_can_comment: 0,
-        }],
-      }),
+      body: JSON.stringify({ articles: [article] }),
     });
     const draftData = await draftResp.json();
 
