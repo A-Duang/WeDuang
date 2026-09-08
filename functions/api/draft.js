@@ -1,6 +1,9 @@
 // Cloudflare Pages Function - 微信公众号草稿箱上传
 // 环境变量：WECHAT_APPID, WECHAT_APPSECRET
 
+// 默认封面图（1x1 像素的透明 PNG）
+const DEFAULT_COVER_BASE64 = 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==';
+
 export async function onRequestPost(context) {
   const { WECHAT_APPID, WECHAT_APPSECRET } = context.env;
 
@@ -38,31 +41,40 @@ export async function onRequestPost(context) {
 
     const accessToken = tokenData.access_token;
 
-    // Step 2: 上传封面图（如果有）
+    // Step 2: 上传封面图
     if (body.coverUrl) {
       try {
         thumbMediaId = await uploadCoverImage(accessToken, body.coverUrl);
       } catch (err) {
-        console.warn('封面上传失败:', err.message);
+        console.warn('封面上传失败，使用默认封面:', err.message);
+      }
+    }
+    
+    // 如果没有封面图，上传一个默认封面
+    if (!thumbMediaId) {
+      try {
+        thumbMediaId = await uploadDefaultCover(accessToken);
+      } catch (err) {
+        console.warn('默认封面上传失败:', err.message);
+        return new Response(JSON.stringify({ error: '封面图上传失败', detail: err.message }), {
+          status: 500,
+          headers: { 'Content-Type': 'application/json' },
+        });
       }
     }
 
     // Step 3: 创建草稿
     const draftUrl = `https://api.weixin.qq.com/cgi-bin/draft/add?access_token=${accessToken}`;
     
-    // 构建文章对象，只在有封面图时添加 thumb_media_id
     const article = {
       title,
       content: body.content,
+      thumb_media_id: thumbMediaId,
       author: body.author || '',
       digest: body.digest || '',
       need_open_comment: 1,
       only_fans_can_comment: 0,
     };
-    
-    if (thumbMediaId) {
-      article.thumb_media_id = thumbMediaId;
-    }
     
     const draftResp = await fetch(draftUrl, {
       method: 'POST',
@@ -82,7 +94,7 @@ export async function onRequestPost(context) {
       success: true,
       media_id: draftData.media_id,
       title,
-      cover_uploaded: !!thumbMediaId,
+      cover_uploaded: !!body.coverUrl,
     }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
@@ -94,6 +106,30 @@ export async function onRequestPost(context) {
       headers: { 'Content-Type': 'application/json' },
     });
   }
+}
+
+// 上传默认封面图
+async function uploadDefaultCover(accessToken) {
+  // 将 base64 转换为 ArrayBuffer
+  const binaryString = atob(DEFAULT_COVER_BASE64);
+  const bytes = new Uint8Array(binaryString.length);
+  for (let i = 0; i < binaryString.length; i++) {
+    bytes[i] = binaryString.charCodeAt(i);
+  }
+  
+  const formData = new FormData();
+  const blob = new Blob([bytes], { type: 'image/png' });
+  formData.append('media', blob, 'default_cover.png');
+
+  const uploadUrl = `https://api.weixin.qq.com/cgi-bin/material/add_material?access_token=${accessToken}&type=image`;
+  const uploadResp = await fetch(uploadUrl, { method: 'POST', body: formData });
+  const data = await uploadResp.json();
+
+  if (!data.media_id) {
+    throw new Error(`上传默认封面失败: ${data.errmsg || '未知错误'}`);
+  }
+
+  return data.media_id;
 }
 
 // 上传封面图片
